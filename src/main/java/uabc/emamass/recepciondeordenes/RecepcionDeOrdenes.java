@@ -15,8 +15,8 @@ public class RecepcionDeOrdenes {
         ColaDeClientes principal = new ColaDeClientes();
         long tiempo = System.currentTimeMillis();
         int contador = 0;
-        while(contador < 20){
-            Thread.sleep(1000 - tiempo % 1000);
+        while(contador < 60){
+            Thread.sleep(2000 - tiempo % 1000);
             contador++;
             principal.agregarCliente();
         }
